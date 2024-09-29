@@ -1,0 +1,38 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 32px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 960px
+}
+
+.loadMore {
+    align-items: flex-start;
+    background-color: rgb(100, 247, 124);
+    border-bottom-color: rgb(100, 247, 124);
+    border-radius: 32px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(100, 247, 124);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(100, 247, 124);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(100, 247, 124);
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: rgb(28, 28, 28);
+    padding: 8px 16px;
+    cursor: pointer
+}

@@ -1,0 +1,21 @@
+// https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "dom"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "esnext",
+    "outDir": "server-build",
+    "noEmit": false,
+    "sourceMap": true,
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": [
+    "server/index.ts",
+    "next-env.d.ts"
+  ]
+}

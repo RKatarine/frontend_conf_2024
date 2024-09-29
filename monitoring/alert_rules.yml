@@ -1,0 +1,12 @@
+groups:
+  - name: example_alerts
+    rules:
+      - alert: Frontend_event_loop_lag
+        expr: next_1_nodejs_eventloop_lag_seconds > 0.1
+        for: 3m
+        labels:
+          severity: degradation
+        annotations:
+          description: "Frontend event loop lag > 100 ms for 3 min at {{ $labels.service }} pods"
+          runbook: <https://your-runbooks-link/next_eventloop_lag>
+          dashboard: <https://your-dashboard-link>

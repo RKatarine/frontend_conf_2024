@@ -1,0 +1,60 @@
+.root {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: inherit;
+}
+
+.discount {
+  color: hsl(336,100%, 56%);
+}
+
+.normal {
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.small {
+  line-height: 26px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.outOfStock {
+  color: hsl(0,0%,40%);
+}
+
+
+.outOfStock .small {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.outOfStock .normal {
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.original {
+  text-decoration: line-through;
+  color: hsl(0,0%,40%);
+  font-size:  16px;
+  font-weight: 500;
+}
+
+.outOfStockNewModal {
+  position: relative;
+}
+
+.outOfStockNewModal::before {
+  display: block;
+  position: absolute;
+  top: 14px;
+  border-bottom: 1px solid hsl(0,0%,40%);
+  width: 100%;
+  content: '';
+}

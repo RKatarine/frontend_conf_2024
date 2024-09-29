@@ -1,0 +1,17 @@
+{
+  "watch": [
+    "config",
+    "server",
+    "services/nextApi",
+    ".env",
+    ".env.*",
+    "next.config.js",
+    "tsconfig.server.json"
+  ],
+  "ignore": [
+    "*.spec.*",
+    "*.test.*"
+  ],
+  "ext": "ts js",
+  "exec": "TS_NODE_PROJECT=tsconfig.server.json NODE_OPTIONS=--max-old-space-size=6144 node --async-stack-traces -r ts-node/register server/index.ts -p 4030"
+}

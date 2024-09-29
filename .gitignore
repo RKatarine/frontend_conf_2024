@@ -1,0 +1,20 @@
+**/node_modules/
+
+# compiled output
+**/dist
+**/build
+
+# next.js
+**/.next/
+**/out/
+**/server-build/
+
+# vercel
+**/.vercel
+
+# typescript
+**/*.tsbuildinfo
+**/next-env.d.ts
+
+/server/dist/
+/monitoring/data

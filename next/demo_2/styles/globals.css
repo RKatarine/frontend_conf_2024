@@ -1,0 +1,32 @@
+:root {
+  --background_primary: #ffffff;
+  --text_primary: #000000;
+}
+
+body {
+  background: var(--background_primary);
+  font-feature-settings: 'lnum' 1;
+  color: var(--text_primary);
+  font-family: "Arial", sans-serif;
+}
+
+html, body {
+  min-height: 100vh;
+  height: 100%;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  color: var(--text_primary);
+}

@@ -1,0 +1,35 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Product {
+  id                Int      @id @default(autoincrement())
+  sku               String?
+  retailerSku       String?
+  available         Boolean?
+  legacyOfferId     Int?
+  name              String?
+  price             Int?
+  originalPrice     Int?
+  discount          Int?
+  humanVolume       String?
+  volume            Int?
+  volumeType        String?
+  itemsPerPack      Int?
+  discountEndsAt    String?
+  priceType         String?
+  gramsPerUnit      Int?
+  unitPrice         Int?
+  originalUnitPrice Int?
+  score             Int?
+  imageUrl          String?
+  slug              String?
+  maxSelectQuantity Int?
+  canonicalUrl      String?
+  maxPerOrder       Int?
+}
